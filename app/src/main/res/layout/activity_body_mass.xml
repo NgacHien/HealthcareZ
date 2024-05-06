@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BodyMassActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:id="@+id/imageBtnback"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/back_btn"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textdayTxt"
+                android:layout_marginLeft="@dimen/_14ssp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thời gian: " />
+
+            <EditText
+                android:minHeight="48dp"
+                android:id="@+id/edittimeTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_marginLeft="@dimen/_14ssp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cân nặng:" />
+
+            <EditText
+                android:id="@+id/editweightTxt"
+                android:minHeight="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/saveBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Lưu" />
+
+                <Button
+                    android:id="@+id/deleteBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Xóa" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_margin="@dimen/_3sdp"
+                android:id="@+id/theodoiTxt"
+                android:background="@color/colorNotecolor2"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold"
+                android:text="Theo dõi tình trạng cân nặng" />
+
+            <TextView
+                android:layout_margin="@dimen/_14ssp"
+                android:id="@+id/theodoilichsuTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
